@@ -1,0 +1,20 @@
+
+#include<stdio.h>
+int main(){
+    int num,n[10],i;
+    printf("Enter 10 Number \n");
+    for (int i = 0; i<10; i++){
+        scanf("%d",&n[i]);
+    }
+    printf("Enter Your Number You Want To Search In List \n");
+    scanf("%d",&num);
+    for ( i = 0; i<10; i++)
+    {
+        if (num==n[i]){
+            printf("Number Is Found \n");
+            break;
+        }           
+    }
+    printf("When Your Num Not Found Print Nothing");
+    return 0;
+}
