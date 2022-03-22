@@ -2,6 +2,7 @@ include<stdio.h>
 
 int main(){
     int num;
+    
     printf("This Is Program Give Your Entered Num Is Odd Or Even \n ");
     printf("Enter Your Num = \n");
     scanf("%d", &num);
