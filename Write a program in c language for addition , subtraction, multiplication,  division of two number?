@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    float a, b, add, multi, sub, divi;
+    printf("Enter first number = \n");
+    scanf("%f", &a);
+    printf("Enter second number = \n");
+    scanf("%f", &b);
+    add = a + b;
+    sub = a - b;
+    multi = a * b;
+    divi = a / b;
+    printf("add= %0.1f\n"  ,add); 
+    printf("sub = %0.1f \n" ,sub);
+    printf("multi = %0.1f \n" ,multi);
+    printf("divide = %0.1f \n" ,divi);
+    return 0;
+}
