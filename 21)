@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+    int i, bs, hra, Da, Gs;
+    for ( i=1 ; i<= 3; i++)
+    {
+        printf("Enter Your Basic Salary =  \n");
+        scanf("%d",&bs);
+        hra=(bs*90)/100;
+        Da=(bs*10)/100;
+        Gs=bs+hra+Da;
+        printf("\n Salary Is = %d\n",Gs);    
+    }
+    return 0;
+}
