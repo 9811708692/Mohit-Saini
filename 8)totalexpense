@@ -1,0 +1,21 @@
+#include<stdio.h>
+ int main(){
+     int si, n, Price , net_Price;
+     printf("Enter Your Book Quantity = \n");
+     scanf("%d",&n);
+     printf("Enter Your Book Price = \n");
+     scanf("%d",&Price);
+     net_Price = n*Price;
+     if (n>=1000){
+        // si=(Price*10)/100;
+        // net_Price = (Price-si)*n; 
+        // Book_discount of 10%
+        int amount=(net_Price*10)/100 ;
+        int total=net_Price-amount;
+        printf("Book Discount Is (10%d).\n (Book If You Buy >1000) \n");
+        printf("This Is Net Amount Of Purchase Book %d",total); }
+     else if (n<=1000)
+     {printf("This Is Net Amount Of Purchase Book %d",net_Price);}
+     else{printf("You Purchase Nothing"); }
+     return 0;
+ }
