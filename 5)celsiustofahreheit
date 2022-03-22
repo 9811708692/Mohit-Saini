@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    float far, celsius, cel ;
+    // for convert celsius to fahrenheit ***
+    printf("Enter Temprature In Celsius = \n");
+    scanf("%f",&celsius);    
+    far= (celsius * 9/5) + 32 ;
+    printf("Temprature In Celsius To Fahrenheit Is %0.2f ",far);
+
+      //for convert fahrenheit to celsius ***
+    // printf("Enter your fahrenheit = ");
+    // scanf("%f",&far);    
+    // cel =  (far-32)*5/9;
+    // printf("convert  fahrenheit to celsius %0.2f ",cel);
+    return 0;
+}
