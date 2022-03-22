@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    int num, sum;
+    printf("Enter Five Numbers = \n");
+    scanf("%d",&num);
+sum=(num%10) +(num/10)%10 +(num/100)%10 +(num/1000)%10 +(num/10000)%10;
+    printf("Sum %d",sum);
+    return 0;
+}
+
