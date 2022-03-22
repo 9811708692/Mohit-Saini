@@ -1,0 +1,53 @@
+#include<stdio.h>
+int main(){
+    int num, i, choice, reverse=0, rem, sum, max;
+    printf("Choice 1 For Armstrong Number \n ");
+    printf("Choice 2 For Check Prime Or Not \n ");
+    printf("Choice 3 For Reverse Your Integer(Num) \n ");
+    printf("Enter Your Choice \n");
+    scanf("%d",&choice);
+    printf("Enter Your Num \n");
+    scanf("%d",&num);
+    
+    switch (choice){
+    case1:
+        for (i = 1; i<50000 ; i++){
+            num=i;
+            sum=0;
+            while (num){
+                rem = num %10;
+                sum=sum+(rem*rem*rem);
+                num=num/10;
+            }
+            if (!(i==num)){
+                printf(" Entered number Not A Amstrong Number ");
+                break;   
+            }
+            else if (i==sum){    
+                printf("Entered  Is A Amstrong Number \n");    
+            }
+            
+        }     
+            break;
+     case2:
+        for (int i = 2; i<num; i++){
+            if (num%i==0){    printf("NOT A Prime number ");  break;  }    
+        }
+        if (num==i){    printf("Prime Number ");   }
+        break;
+     case3:
+        printf("Reverse Of Integer ");
+        while (num!=0){
+            rem=num%10;
+            reverse=reverse*10+rem;
+            num/=10;                 //(num=num/10)
+        }
+        printf("Reverse Num = %d",reverse); 
+        break;
+     default:
+        break;
+    }
+    return 0;
+}  
+
+
