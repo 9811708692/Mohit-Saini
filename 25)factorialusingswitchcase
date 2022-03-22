@@ -1,0 +1,45 @@
+
+#include<stdio.h>
+
+int main(){
+        int num, choice, fact=1, i, count=0;
+        printf("Choice 1 For Factorial \n ");
+        printf("Choice 2 For Number Prime Or Not \n");
+        printf("Choice 3 For Even Or Not\n");
+        printf("Choice 4 For Exit \n");
+        printf("Enter Your Choice (1, 2 , 3 , 4 )=  \n");
+        scanf("%d",&choice);
+        printf("Enter Your Number ");
+        scanf("%d",&num);
+        switch (choice)
+        {
+        case 1:
+                for ( i = 1; i<=num; i++){
+                        fact=fact*i;
+                }
+                printf("Factorial Of Num=%d Is %d",num,fact);
+                break;
+        case 2:
+                for ( i = 2; i<=num-1; i++){
+                        if (num%i==0){     printf("Not A Prime Number");
+                                break;   
+                        }
+                }
+                if(num==i){      printf("It Is Prime Number");     }
+                break;
+        case 3:
+                if(num%2==0)
+                {
+                        printf("It Is Even Number");
+                }else{
+                        printf("It Is Odd Number");
+                }
+                break;
+        case 4:{
+                    printf("\nExit");
+                } 
+                break;
+        }
+        return 0;
+        }
+
