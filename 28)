@@ -1,0 +1,15 @@
+#include<stdio.h>
+int swap(int,int);
+
+int main(){
+    int a=10,b=20;
+    swap(a,b);
+    return 0;
+}
+int swap(int X,int Y){
+     int temp;
+     temp = X;
+     X = Y;
+     Y = temp;
+     printf("\n x=%d y=%d", X, Y);
+}
