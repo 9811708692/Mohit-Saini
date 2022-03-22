@@ -1,0 +1,20 @@
+
+#include<stdio.h>
+
+int main(){
+    int M1, M2, M3, M4, M5, M6, avg;
+    printf("Enter You Six Subject Marks = \n");
+    scanf("%d %d %d %d %d %d",&M1,&M2,&M3,&M4,&M5,&M6);
+    avg =(M1+M2+M3+M4+M5+M6)/6;
+    printf("Average Of Your Marks %d\n",avg);
+    if ((M1<35) || (M2<35) || (M3<35) || (M4<35) || (M5<35) || (M6<35) ){
+        printf(" You Are Fail \n");
+    }
+    else{
+    if(50>avg && avg>=35){ printf("Result : Third Division \n");   }
+    else if (60>avg && avg>=50){  printf("Result : Second Division \n");  }
+    else if (75>avg && avg>=60){    printf("Result : First Division \n");  }
+    else if (100>avg && avg>=75){   printf("Result : Distinction Division \n");   }
+    }
+  
+    return 0;
