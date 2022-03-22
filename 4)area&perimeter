@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    float length, breadth ,radius , area_rectangle, perimeter;
+    float pi=3.14 ,area_Circle ,circumfrence_circle ;
+    printf("Enter Length of Rectangle =  \n");
+    scanf("%f",&length);
+    printf("Enter Breath of Rectangle =  \n");
+    scanf("%f",&breadth);
+    printf("Enter Radius of circle =  ");
+    scanf("%f",&radius);
+    area_rectangle = length*breadth ;
+    perimeter = 2*(length+breadth);
+    area_Circle = pi*radius*radius;
+    circumfrence_circle = 2*pi*radius;
+    printf("This is Area Of Rectangle is = %0.1f \n", area_rectangle);
+    printf("This is Perimeter Of Rectangle is = %0.1f \n",perimeter );
+    printf("This is Area Of Circle  is = %0.1f \n", area_Circle );
+    printf("This is Circumfrence Of Circle  is = %0.1f \n", circumfrence_circle);
+    return 0;
+    }
+
