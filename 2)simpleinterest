@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    float principal, years ,rate;
+    float simple_interest;
+    printf("Enter Principle Amount = \n");
+    scanf("%f",&principal);
+    printf("Enter Rate = \n");
+    scanf("%f",&rate);
+    printf("Enter No Of Years = \n");
+    scanf("%f",&years);
+    simple_interest = (principal*years*rate)/100;
+    printf(" This Is Simple Interest Of Amount = %0.1f",simple_interest);
+    return 0;
+}
