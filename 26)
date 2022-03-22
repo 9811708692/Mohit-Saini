@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+int main(){
+    char op;
+    int num1,num2;
+    printf("Choose Your Operator = (+ - * /  A P):\n");
+    scanf("%c",&op);
+    printf("Enter Your Two Number  =\n");
+    scanf("%d%d",&num1,&num2);
+    
+    switch (op){
+        case'+':
+            printf("Addition Is %d ",num1+num2);
+            break;
+        
+        case'-':
+            printf("Subtraction Is %d ",num1-num2);
+            break;
+        
+        case'*':
+            printf("Multiply Is %d ",num1*num2);
+            break;
+        
+        case'/':
+            printf("Divide Is %d ",num1/num2);
+            break;
+        case'A':
+            printf("Average Is %d ",(num1+num2)/2);
+            break;
+        case'P':
+            printf("Percentage Is %d ",(num1+num2)/2);
+            break;
+        default:
+            printf("Error Operator Is Not Correct \n");
+            break;
+        }
+
+    return 0;
+}
+
+
