@@ -1,0 +1,39 @@
+#include<stdio.h>
+int add(int*,int*);
+int Sub(int*x,int*y);
+int Mult(int*x,int*y);
+int Divide(int*x,int*y);
+int main(){
+   int a, b, sum, sub, mul, div;
+   printf("\n Enter Your Two Number = \n");
+   scanf("%d %d",&a,&b);
+   sum=add(&a,&b);
+   sub = Sub(&a,&b);
+   mul=Mult(&a,&b);
+   div = Divide(&a,&b);
+   printf("This Is Sum = %d\n",sum);
+   printf("This Is Subtract = %d\n",sub);
+   printf("This Is Multiply = %d\n",mul);
+   printf("This Is Divide = %d\n",div);
+   return 0;
+}
+int add(int*x,int*y){
+      int sum;
+      sum =(*x)+(*y);
+      return sum;
+}
+int Sub(int*x,int*y){
+      int sub;
+      sub =(*x)-(*y);
+      return sub;
+}
+int Mult(int*x,int*y){
+      int M;
+      M =(*x)*(*y);
+      return M;
+}
+int Divide(int*x,int*y){
+      int Div;
+      Div =(*x)/(*y);
+      return Div;
+}
