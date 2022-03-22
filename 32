@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    float farray[20];
+    float tvalue;
+    int sum;
+    int n;
+    scanf("%f", &tvalue);
+    scanf("%d", &n);
+    
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%f", &farray[i]);
+    }
+    
+    for (int i = 0; i < n; i++)
+    {
+        if(farray[i] > tvalue)
+        {
+            sum = sum + 1;
+        }
+    }
+    printf("%d", sum);
+	return 0;
+}
